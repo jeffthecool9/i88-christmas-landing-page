@@ -1,13 +1,20 @@
+import React from "react";
+
 export default function App() {
   return (
-    <div style={{
-      background: "black",
-      color: "white",
-      minHeight: "100vh",
-      padding: "40px"
-    }}>
-      <h1>React is working</h1>
-      <p>If you see this, your problem is layout/animation.</p>
+    <div
+      style={{
+        minHeight: "100vh",
+        background: "red",
+        color: "white",
+        fontSize: "48px",
+        display: "flex",
+        alignItems: "center",
+        justifyContent: "center",
+        fontWeight: "bold",
+      }}
+    >
+      REACT IS WORKING
     </div>
   );
 }
