@@ -5,33 +5,16 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Grand Mystery Prizes - i88</title>
 
-    <!-- Tailwind CDN (OK for now) -->
-    <script src="https://cdn.tailwindcss.com"></script>
-
-    <!-- Fonts -->
+    <!-- Fonts only (OK) -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;700;900&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Great+Vibes&family=Inter:wght@300;400;600;700;800&display=swap" rel="stylesheet">
-
-    <style>
-      body {
-        margin: 0;
-        padding: 0;
-        overflow-x: hidden;
-        background: #020617;
-      }
-      .font-spark { font-family: 'Cinzel', serif; }
-      .font-formal { font-family: 'Playfair Display', serif; }
-      .font-script { font-family: 'Great Vibes', cursive; }
-      .font-main { font-family: 'Inter', sans-serif; }
-    </style>
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;700;900&family=Playfair+Display:wght@400;700;900&family=Great+Vibes&family=Inter:wght@300;400;600;700;800&display=swap" rel="stylesheet">
   </head>
 
-  <body>
-    <!-- React mounts here -->
+  <body class="bg-slate-950">
     <div id="root"></div>
 
-    <!-- 🚨 THIS IS THE MISSING PIECE -->
+    <!-- ✅ THIS IS THE MOST IMPORTANT LINE -->
     <script type="module" src="/src/index.tsx"></script>
   </body>
 </html>
