@@ -4,10 +4,15 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Grand Mystery Prizes - i88</title>
+
+    <!-- Tailwind CDN (OK for now) -->
     <script src="https://cdn.tailwindcss.com"></script>
+
+    <!-- Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;700;900&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Great+Vibes&family=Inter:wght@300;400;600;700;800&display=swap" rel="stylesheet">
+
     <style>
       body {
         margin: 0;
@@ -19,105 +24,14 @@
       .font-formal { font-family: 'Playfair Display', serif; }
       .font-script { font-family: 'Great Vibes', cursive; }
       .font-main { font-family: 'Inter', sans-serif; }
-      
-      /* ❄️ INTENSE NEON SPARKLE EFFECT */
-      .text-christmas-spark {
-        position: relative;
-        background: linear-gradient(
-          110deg, 
-          #ffffff 0%, 
-          #ffffff 35%, 
-          #00d4ff 45%, 
-          #ffffff 50%, 
-          #00d4ff 55%, 
-          #ffffff 65%, 
-          #ffffff 100%
-        );
-        background-size: 250% auto;
-        -webkit-background-clip: text;
-        -webkit-text-fill-color: transparent;
-        animation: sparkShimmer 10s ease-in-out infinite;
-        filter: drop-shadow(0 0 12px rgba(255, 255, 255, 0.8)) 
-                drop-shadow(0 0 30px rgba(0, 212, 255, 0.6));
-      }
-
-      .text-christmas-spark::after {
-        content: attr(data-text);
-        position: absolute;
-        left: 0;
-        top: 0;
-        width: 100%;
-        height: 100%;
-        z-index: 1;
-        background-image: radial-gradient(circle, #fff 1.5px, transparent 1.5px);
-        background-size: 8px 8px;
-        -webkit-background-clip: text;
-        -webkit-text-fill-color: transparent;
-        opacity: 0.5;
-        animation: glitterGrain 6.5s infinite linear;
-      }
-
-      @keyframes bluePulseGlow {
-        0%, 100% { 
-          text-shadow: 0 0 10px rgba(14, 165, 233, 0.4); 
-          transform: scale(1);
-        }
-        50% { 
-          text-shadow: 0 0 25px rgba(56, 189, 248, 0.8); 
-          transform: scale(1.01);
-        }
-      }
-      .animate-blue-glow {
-        animation: bluePulseGlow 4s ease-in-out infinite;
-      }
-
-      @keyframes sparkShimmer {
-        0% { background-position: -125% 0; }
-        100% { background-position: 125% 0; }
-      }
-
-      @keyframes glitterGrain {
-        0% { transform: translate(0, 0); opacity: 0.3; }
-        50% { transform: translate(1px, 1px); opacity: 0.7; }
-        100% { transform: translate(0, 0); opacity: 0.3; }
-      }
-
-      @keyframes shine {
-        0% { transform: translateX(-120%) skewX(-35deg); }
-        35%, 100% { transform: translateX(250%) skewX(-35deg); }
-      }
-      .animate-shine {
-        position: relative;
-        overflow: hidden;
-      }
-      .animate-shine::after {
-        content: "";
-        position: absolute;
-        top: 0;
-        left: 0;
-        width: 100%;
-        height: 100%;
-        background: linear-gradient(
-          to right,
-          transparent,
-          rgba(255, 255, 255, 0.4),
-          transparent
-        );
-        animation: shine 20s infinite ease-in-out;
-      }
     </style>
-    <script type="importmap">
-    {
-      "imports": {
-        "react-dom/": "https://esm.sh/react-dom@^19.2.3/",
-        "react/": "https://esm.sh/react@^19.2.3/",
-        "react": "https://esm.sh/react@^19.2.3",
-        "framer-motion": "https://esm.sh/framer-motion@^12.23.26"
-      }
-    }
-    </script>
   </head>
+
   <body>
+    <!-- React mounts here -->
     <div id="root"></div>
+
+    <!-- 🚨 THIS IS THE MISSING PIECE -->
+    <script type="module" src="/src/index.tsx"></script>
   </body>
 </html>
