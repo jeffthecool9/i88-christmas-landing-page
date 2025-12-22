@@ -1,14 +1,19 @@
 import CTAButton from './components/CTAButton'
 import SnowFall from './components/SnowFall'
-import HeroSection from './components/HeroSection'
+import MysteryPodium from "./components/MysteryPodium";
+
 
 export default function App() {
   return (
     <main className="min-h-screen bg-red-600 text-white flex items-center justify-center relative overflow-hidden">
       <SnowFall />
+  <MysteryPodium />
 
-      <section className="z-10 text-center px-6 max-w-3xl">
-       <HeroSection />
+  <div className="mt-10 flex justify-center">
+    <CTAButton text="Join Now to Win" link="#" />
+  </div>
+</section>
+
 
         <div className="mt-10 flex justify-center">
           <CTAButton text="Join Now to Win" link="#" />
