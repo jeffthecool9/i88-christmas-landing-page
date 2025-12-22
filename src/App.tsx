@@ -1,6 +1,6 @@
 import CTAButton from './components/CTAButton'
 import SnowFall from './components/SnowFall'
-import Hero from './components/HeroSection'
+import HeroSection from './components/HeroSection'
 
 export default function App() {
   return (
