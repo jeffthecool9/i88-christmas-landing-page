@@ -1,6 +1,7 @@
 import Hero from './components/Hero'
 import CTAButton from './components/CTAButton'
 import SnowFall from './components/SnowFall'
+import MysteryPodium from './components/MysteryPodium'
 
 export default function App() {
   return (
