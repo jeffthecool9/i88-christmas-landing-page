@@ -1,13 +1,48 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>My Landing Page</title>
-  </head>
-  <body>
-    <div id="root"></div>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grand Mystery Christmas</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-slate-900 text-white font-sans">
 
-  <script type="module" src="src/main.tsx"></script>
-  </body>
+    <section class="min-h-screen flex flex-col items-center justify-center text-center px-6">
+        <h1 class="text-5xl md:text-7xl font-bold mb-6 bg-gradient-to-r from-red-500 to-green-500 bg-clip-text text-transparent">
+            Grand Mystery Christmas
+        </h1>
+        <p class="text-xl md:text-2xl text-slate-300 mb-10 max-w-2xl">
+            The ultimate holiday experience is arriving. Are you ready to uncover the mystery?
+        </p>
+        <a href="#join" class="bg-red-600 hover:bg-red-700 text-white px-10 py-4 rounded-full text-lg font-bold transition-all transform hover:scale-105">
+            Join the Mystery
+        </a>
+    </section>
+
+    <section id="join" class="py-20 bg-slate-800">
+        <div class="max-w-4xl mx-auto px-6 text-center">
+            <h2 class="text-3xl font-bold mb-8">Limited Availability</h2>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <div class="p-6 bg-slate-700 rounded-xl">
+                    <h3 class="text-xl font-bold mb-2">Exclusive</h3>
+                    <p class="text-slate-400">Only for the first 100 participants.</p>
+                </div>
+                <div class="p-6 bg-slate-700 rounded-xl">
+                    <h3 class="text-xl font-bold mb-2">Grand Prizes</h3>
+                    <p class="text-slate-400">Over $5,000 in mystery gifts.</p>
+                </div>
+                <div class="p-6 bg-slate-700 rounded-xl">
+                    <h3 class="text-xl font-bold mb-2">Global</h3>
+                    <p class="text-slate-400">Joining from anywhere in the world.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="py-10 text-center text-slate-500 text-sm">
+        &copy; 2025 Grand Mystery Christmas. All Rights Reserved.
+    </footer>
+
+</body>
 </html>
