@@ -1,18 +1,9 @@
+import Hero from "./components/Hero";
+
 export default function App() {
   return (
-    <div
-      style={{
-        minHeight: "100vh",
-        background: "black",
-        color: "white",
-        display: "flex",
-        alignItems: "center",
-        justifyContent: "center",
-        fontSize: "32px",
-        fontWeight: "bold",
-      }}
-    >
-      APP IS RENDERING
+    <div className="min-h-screen bg-red-600 text-white flex items-center justify-center">
+      <Hero />
     </div>
   );
 }
