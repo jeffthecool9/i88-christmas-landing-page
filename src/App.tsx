@@ -8,7 +8,7 @@ export default function App() {
       <SnowFall />
 
       <section className="z-10 text-center px-6 max-w-3xl">
-        <Hero />
+       <HeroSection />
 
         <div className="mt-10 flex justify-center">
           <CTAButton text="Join Now to Win" link="#" />
